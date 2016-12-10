@@ -15,7 +15,7 @@ if(isset($_GET['delete_id']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>Questions</title>
 <link rel="stylesheet" href="style2.css" type="text/css" />
 <script type="text/javascript">
 function edt_id(id)
@@ -29,7 +29,7 @@ function delete_id(id)
 {
  if(confirm('Sure to Delete ?'))
  {
-  window.location.href='index.php?delete_id='+id;
+  window.location.href='crud_index.php?delete_id='+id;
  }
 }
 </script>
@@ -39,7 +39,7 @@ function delete_id(id)
 
 <div id="header">
  <div id="content">
-    <label>CRUD Operations With PHP and MySql - <a href="http://cleartuts.blogspot.com" target="_blank">By Cleartuts</a></label>
+    <label>All Questions</label>
     </div>
 </div>
 
@@ -52,6 +52,8 @@ function delete_id(id)
     <th>First Name</th>
     <th>Last Name</th>
     <th>City Name</th>
+    <th>Email</th>
+    <th>Comments</th>
     <th colspan="2">Operations</th>
     </tr>
     <?php
@@ -64,6 +66,10 @@ function delete_id(id)
         <td><?php echo $row[1]; ?></td>
         <td><?php echo $row[2]; ?></td>
         <td><?php echo $row[3]; ?></td>
+        <td><?php echo $row[4]; ?></td>
+        <td><?php echo $row[5]; ?></td>
+
+
   <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
         <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="b_drop.png" align="DELETE" /></a></td>
         </tr>
