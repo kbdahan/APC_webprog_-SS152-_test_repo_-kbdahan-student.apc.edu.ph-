@@ -12,10 +12,12 @@ if(isset($_POST['btn-update']))
  $first_name = $_POST['first_name'];
  $last_name = $_POST['last_name'];
  $city_name = $_POST['city_name'];
+ $email =$_POST['email'];
+ $comment =$_POST['comment'];
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',user_city='$city_name' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',user_city='$city_name',email='$email',comment='$comment' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -24,7 +26,7 @@ if(isset($_POST['btn-update']))
   ?>
   <script type="text/javascript">
   alert('Data Are Updated Successfully');
-  window.location.href='index.php';
+  window.location.href='crud_index.php';
   </script>
   <?php
  }
@@ -47,7 +49,7 @@ if(isset($_POST['btn-cancel']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>EDIT</title>
 <link rel="stylesheet" href="style2.css" type="text/css" />
 </head>
 <body>
@@ -71,6 +73,12 @@ if(isset($_POST['btn-cancel']))
     </tr>
     <tr>
     <td><input type="text" name="city_name" placeholder="City" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email']; ?>" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="comment" placeholder="Comment" value="<?php echo $fetched_row['comment']; ?>" required /></td>
     </tr>
     <tr>
     <td>
