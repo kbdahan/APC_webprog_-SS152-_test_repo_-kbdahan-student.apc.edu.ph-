@@ -25,6 +25,31 @@
         <p>Why Blackhole Disposal? It is where all my memories eventually go, like the blackhole in space it is where all matter eventually end up caused by an exploding sun; Or maybe I ran out of names to call the website either way still cool (ain't it?). Soooooo..... What now? You want more info? FINE! I may look like a serious guy but if you met me, I am more likely a clown than a dead serious guy (stop refrencing the Joker, dude) I love the Joker, you know the Joker right? enemy of Batman, I always wanted to be the Joker. Yeah you guessed it I'm Evil MWAHAHAHAH! Nah I'm just messing with you I can impersonate him and cosplay sometimes (but not cosplaying anime shit, because you know eww, some not all though). I'm getting tired introducing myself *SIGH* if you want, explore other stuff in the website. You just can't keep reading this as the picture on your right switch in to me urinating on a fountiain (by the way it's an illusion) have fun reading my head.</p>
         <hr>
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+
+        </font>
+    </div><!--close text_content-->   
+  
+      <ul class="slideshow">
+       <?php if(!empty($images)): foreach($images as $img): ?>
+    <li><img src="uploads/<?php echo $img['image']; ?>" alt=""></li>
+<?php endforeach; endif; ?>
+      </ul>     
         <h1>5 Trivias About Me </h1>
         <br>
         <h2>Q: What is my favorite Comic Book Brand?</h2>
@@ -47,113 +72,6 @@
         <h2>Q: In 5 words how do I describe myself?</h2>
         <p id="ans5"> Click the Button For the answer</p>
         <button type="button" onclick="document.getElementById('ans5').innerHTML = 'I am POLITE not NICE!'" >Answer!</button>
-
-
-        </font>
-    </div><!--close text_content-->   
-  
-      <ul class="slideshow">
-       <?php if(!empty($images)): foreach($images as $img): ?>
-    <li><img src="uploads/<?php echo $img['image']; ?>" alt=""></li>
-<?php endforeach; endif; ?>
-      </ul>     
-    
-
-
-    <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
-<h2>Any Question? Ask Away!</h2>
-<p><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
-
-
-
   </div><!--end site_content-->
   </div><!--end main-->
 
