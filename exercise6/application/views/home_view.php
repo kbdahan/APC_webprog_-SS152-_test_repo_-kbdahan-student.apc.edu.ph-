@@ -18,7 +18,7 @@
 <header>
   <div class = "wrapper">
     <a id = "logo" href = "Main.html" target = "display"></img>
-    </a><a id = "logo2" href = "main.html" target = "display"><img src="logo.png" alt = "" width="317"></a><img src="img/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
+    </a><a id = "logo2" href = "main.html" target = "display"><img src="uploads/logo.png" alt = "" width="317"></a><img src="uploads/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
     <nav></nav>
     <div class = "clearfix"></div>
   </div>
