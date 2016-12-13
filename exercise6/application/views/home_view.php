@@ -14,7 +14,7 @@
   }
 </script>
 </head>
-<body background = "bg1.jpg">
+<body background = "uploads/bg1.jpg">
 <header>
   <div class = "wrapper">
     <a id = "logo" href = "Main.html" target = "display"></img>
