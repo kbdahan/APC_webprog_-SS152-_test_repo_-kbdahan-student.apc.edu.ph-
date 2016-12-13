@@ -1,82 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang=''>
 <head>
-  <title>BlackHole Disposal</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="image_slide.js"></script>
-  <style>
-.error {color: #FF0000;}
-</style>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>BlackHole Disposal</title>
+   <script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 </head>
-
-<body>
-  <div id="main">
-    <div id="header">
-      
-    </div>
+<body background = "bg1.jpg">
+<header>
+  <div class = "wrapper">
+    <a id = "logo" href = "Main.html" target = "display"></img>
+    </a><a id = "logo2" href = "main.html" target = "display"><img src="logo.png" alt = "" width="317"></a><img src="img/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
+    <nav></nav>
+    <div class = "clearfix"></div>
+  </div>
+</header>
     
-  <div id="site_content"> 
-  
-    <div id="text_content"> 
-      <font face = "Hallo Sans">      
-        <h1>Kristian Nikko Dahan</h1>
-        <p>Welcome to my mind palace, this is the place of things you need to know about me (well the mostly this). I'm 19 years old right now as I edit this right now, I was born on September 10, 1997; I know right close to 9/11 one day you're happy then *boosh* mass panic everywhere by a terrorist attac...... wait what am I doing, I'm explaining all there is to know about me. Anyways my hobbies are singing, dancing(when no one is looking), playing videogames,etc. every young teen hobbies (so cliche). As you are reading this you are asking yourself, why even in the description form you put meta conversation, it's because I want to make the description longer, silly! See, as I explained why I put description like this it makes it longer(still doing it).Back to the description, as you can see in your right I look like a nerd, it is because I am a super nerd, but that doesn't mean I can't beat the SH*T out of you, YOU MOTHERF****R (WOAH DUDE! remember you're explaining).I love Superheroes so much that I actually act like one, no kidding. Imagine me running up and down the stairs with noises like lightning, acting like the flash and all(LOL NERD!)</p>      
-        <p>Why Blackhole Disposal? It is where all my memories eventually go, like the blackhole in space it is where all matter eventually end up caused by an exploding sun; Or maybe I ran out of names to call the website either way still cool (ain't it?). Soooooo..... What now? You want more info? FINE! I may look like a serious guy but if you met me, I am more likely a clown than a dead serious guy (stop refrencing the Joker, dude) I love the Joker, you know the Joker right? enemy of Batman, I always wanted to be the Joker. Yeah you guessed it I'm Evil MWAHAHAHAH! Nah I'm just messing with you I can impersonate him and cosplay sometimes (but not cosplaying anime shit, because you know eww, some not all though). I'm getting tired introducing myself *SIGH* if you want, explore other stuff in the website. You just can't keep reading this as the picture on your right switch in to me urinating on a fountiain (by the way it's an illusion) have fun reading my head.</p>
-        <hr>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-
-
-        </font>
-    </div><!--close text_content-->   
-  
-      <ul class="slideshow">
-       <?php if(!empty($images)): foreach($images as $img): ?>
-    <li><img src="uploads/<?php echo $img['image']; ?>" alt=""></li>
-<?php endforeach; endif; ?>
-      </ul>     
-        <h1>5 Trivias About Me </h1>
-        <br>
-        <h2>Q: What is my favorite Comic Book Brand?</h2>
-        <p id="ans1"> Click the Button For the answer</p>
-        <button type="button" onclick="document.getElementById('ans1').innerHTML = 'Trick Question, I love both DC and Marvel'" >Answer!</button>
-        <br>
-        <h2>Q: What is my Talent?</h2>
-        <p id="ans2"> Click the Button For the answer</p>
-        <button type="button" onclick="document.getElementById('ans2').innerHTML = 'Singing. I have a high range voice, I can hit high notes easily. '" >Answer!</button>
-        <br>
-        <h2>Q: What is my Fear?</h2>
-        <p id="ans3"> Click the Button For the answer</p>
-        <button type="button" onclick="document.getElementById('ans3').innerHTML = 'Heights, I hate high places.'" >Answer!</button>
-        <br>
-        <br>
-        <h2>Q: What do I do when I'm Bored?</h2>
-        <p id="ans4"> Click the Button For the answer</p>
-        <button type="button" onclick="document.getElementById('ans4').innerHTML = 'I usually lay down and binge watch videos, I procrastinate a lot and I am not proud. But when I am not lazy I relaxed and play the guitar.'" >Answer!</button>
-        <br>
-        <h2>Q: In 5 words how do I describe myself?</h2>
-        <p id="ans5"> Click the Button For the answer</p>
-        <button type="button" onclick="document.getElementById('ans5').innerHTML = 'I am POLITE not NICE!'" >Answer!</button>
-  </div><!--end site_content-->
-  </div><!--end main-->
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.php'><span>Home</span></a></li>
+   <li class='has-sub'><a href="about.php"target = "display"><span>About</span></a>
+   </li>
+   <li class='has-sub'><a href='#'><span>Photo Gallery</span></a>
+      <ul>
+         <li><a href="childhoodgallery.html"target = "display"><span>Childhood</span></a></li>
+         <li><a href="FamilyGallery.html"target = "display"><span>Family</span></a></li>
+         <li><a href="elementarygallery.html"target = "display"><span>Elementary</span></a></li>
+         <li><a href="highschoolGallery.html"target = "display"><span>HighSchool</span></a></li>
+         <li class='last'><a href="collegegallery.html"target = "display"><span>College</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Favorites</span></a>
+      <ul>
+         <li><a href="pets.html"target = "display"><span>Pets</span></a></li>
+         <li class='has-sub'><a href='#'><span>Song</span></a>
+            <ul>
+               <li><a href="rock.html"target = "display"><span>Rock</span></a></li>
+               <li><a href="pop.html"target = "display"><span>Pop</span></a></li>
+               <li class='last'><a href="mellow.html"target = "display"><span>Mellow</span></a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Links</span></a>
+     <ul>
+               <li><a href="https://www.facebook.com/Kristian.Nikko"target="_blank"><span>Facebook</span></a></li>
+               <li><a href="https://twitter.com/NikkoDahan"target="_blank"><span>Twitter</span></a></li>
+               <li><a href="add_data.php"target="display"><span>Contact</span></a></li>
+            </ul>
+   </li>
+  </ul>
+</div>
+<center>
+<iframe src = "Main.html" name = "display" width ="1330" height = "1025" frameBorder = "0"  scrolling="no" id="iframe"    onload='javascript:resizeIframe(this);'>
 
 
 </body>
-</html>
-
-
+<html>
