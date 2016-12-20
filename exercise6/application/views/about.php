@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>BlackHole Disposal</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="image_slide.js"></script>
-  <style>
-.error {color: #FF0000;}
-</style>
-</head>
-
-<body>
   <div id="main">
     <div id="header">
       
@@ -36,11 +23,11 @@
     </div><!--close text_content-->   
   
       <ul class="slideshow">
-        <li class="show"><img width="500" height="450" src="1.jpg"  /></li>
-        <li><img width="500" height="450" src="2.jpg"  /></li>
-        <li><img width="500" height="450" src="3.jpg"  /></li>
-        <li><img width="500" height="450" src="4.jpg"  /></li>
-        <li><img width="500" height="450" src="5.jpg"  /></li>
+        <li class="show"><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/1.jpg'); ?>"   /></li>
+        <li><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/2.jpg'); ?>"  /></li>
+        <li><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/3.jpg'); ?>"  /></li>
+        <li><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/4.jpg'); ?>"  /></li>
+        <li><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/5.jpg'); ?>"   /></li>
       </ul>     
       <h1>5 Trivias About Me </h1>
         <h2>Q: What is my favorite Comic Book Brand?</h2>
