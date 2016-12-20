@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost:8080/exercise6/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'home.php';
+$config['index_page'] = 'index_home.php';
 
 /*
 |--------------------------------------------------------------------------
