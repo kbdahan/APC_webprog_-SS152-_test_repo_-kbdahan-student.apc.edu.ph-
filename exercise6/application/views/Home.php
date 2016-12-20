@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 <header>
   <div class = "wrapper">
-    <a id = "logo" href = "<?php echo base_url();?>Main/Main" target = "display"></img>
+    <a id = "logo" href = "<?php echo base_url(); ?> Home/Main" target = "display"></img>
     </a><a id = "logo2" href = "<?php echo base_url();?>Main/Main" target = "display"><img src="<?php echo base_url('assets/uploads/img/logo.png');?>" alt = "" width="317"></a><img src="<?php echo base_url('assets/uploads/img/me.JPG');?>" width="151" height="115" alt="" border = "3" border-color = "black"/>
     <nav></nav>
     <div class = "clearfix"></div>
@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id='cssmenu'>
 <ul>
    <li class='active'><a href="<?php echo site_url('Home');?>"><span>Home</span></a></li>
-   <li class='has-sub'><a href="about.php"target = "display"><span>About</span></a>
+   <li class='has-sub'><a href="<?php echo site_url('Home/about');?>"target = "display"><span>About</span></a>
    </li>
    <li class='has-sub'><a href='#'><span>Photo Gallery</span></a>
       <ul>
@@ -63,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </ul>
 </div>
 <center>
-<iframe src = "Main.html" name = "display" width ="1330" height = "1025" frameBorder = "0"  scrolling="no" id="iframe"    onload='javascript:resizeIframe(this);'>
+<iframe src = "<?php echo base_url('Home/Main'); ?>" name = "display" width ="1330" height = "1025" frameBorder = "0"  scrolling="no" id="iframe"    onload='javascript:resizeIframe(this);'>
 
 
 </body>

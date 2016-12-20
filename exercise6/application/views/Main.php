@@ -4,7 +4,7 @@
 <style>
 
 body {
-	background-image: url("uploads/homepage.jpg");
+	background-image: url("<?php echo base_url('assets/uploads/img/homepage.jpg'); ?> " );
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 	width: 1300px;
