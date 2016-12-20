@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <header>
   <div class = "wrapper">
     <a id = "logo" href = "<?php echo base_url();?>Main/Main" target = "display"></img>
-    </a><a id = "logo2" href = "main.html" target = "display"><img src="uploads/img/logo.png" alt = "" width="317"></a><img src="uploads/img/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
+    </a><a id = "logo2" href = "<?php echo base_url();?>Main/Main" target = "display"><img src="<?php echo base_url('assets/uploads/img/logo.png');?>" alt = "" width="317"></a><img src="<?php echo base_url('assets/uploads/img/me.JPG');?>" width="151" height="115" alt="" border = "3" border-color = "black"/>
     <nav></nav>
     <div class = "clearfix"></div>
   </div>
