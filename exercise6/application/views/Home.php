@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href= '<?php echo $base_url();?>css/styles.css'>
+   <link rel="stylesheet" href= "<?php echo base_url('application/css/styles.css');?>"/>
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
    <title>BlackHole Disposal</title>
@@ -17,10 +17,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   }
 </script>
 </head>
-<body background = '<?php echo base_url(); ?>uploads/bg1.jpg'>
+<body background = "<?php echo base_url('uploads/bg1.jpg');?>">
 <header>
   <div class = "wrapper">
-    <a id = "logo" href = '<?php echo $base_url();?>application/views/Main.php' target = "display"></img>
+    <a id = "logo" href = "<?php echo base_url();?>Main/Main" target = "display"></img>
     </a><a id = "logo2" href = "main.html" target = "display"><img src="uploads/logo.png" alt = "" width="317"></a><img src="uploads/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
     <nav></nav>
     <div class = "clearfix"></div>
@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='index.php'><span>Home</span></a></li>
+   <li class='active'><a href="<?php echo site_url('Home');?>"><span>Home</span></a></li>
    <li class='has-sub'><a href="about.php"target = "display"><span>About</span></a>
    </li>
    <li class='has-sub'><a href='#'><span>Photo Gallery</span></a>
