@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 	}
 	public function PhotoGallery()
 	{
-	$this->load->controller('PhotoGallery');
+	$this->load->view('PhotoGallery');
 	}
 	public function Favorites()
 	{
@@ -26,6 +26,7 @@ class Home extends CI_Controller {
 	public function Main()
 	{
 	$this->load->view('Main');
+
 	}
 
 
