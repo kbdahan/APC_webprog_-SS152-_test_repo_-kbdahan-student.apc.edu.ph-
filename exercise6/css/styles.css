@@ -1,4 +1,4 @@
-html
+<html>
 { height: 100%;}
 
 *
@@ -7,7 +7,7 @@ html
 
 body
 { font: normal 100% Georgia, serif;
-  background: #1D1D1D url(uploads/bg1.jpg) repeat;
+  background: #1D1D1D url("uploads/img/bg1.jpg") repeat;
   color: #FFF;}
 
 p
@@ -414,3 +414,4 @@ ul img {
   box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.15);
   width: 150px;
 }
+</html>

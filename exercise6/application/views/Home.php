@@ -17,11 +17,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   }
 </script>
 </head>
-<body background = "<?php echo base_url('uploads/bg1.jpg');?>">
+<body background = "uploads/img/bg1.jpg">
 <header>
   <div class = "wrapper">
     <a id = "logo" href = "<?php echo base_url();?>Main/Main" target = "display"></img>
-    </a><a id = "logo2" href = "main.html" target = "display"><img src="uploads/logo.png" alt = "" width="317"></a><img src="uploads/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
+    </a><a id = "logo2" href = "main.html" target = "display"><img src="uploads/img/logo.png" alt = "" width="317"></a><img src="uploads/img/me.JPG" width="151" height="115" alt="" border = "3" border-color = "black"/>
     <nav></nav>
     <div class = "clearfix"></div>
   </div>
