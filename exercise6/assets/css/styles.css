@@ -7,8 +7,7 @@
 
 body
 { font: normal 100% Georgia, serif;
-  background: #1D1D1D repeat;
-  background-image: url('../uploads/img/bg1.jpg')repeat;
+  background:url(../uploads/img/bg1.jpg) repeat;
   color: #FFF;}
 
 p
