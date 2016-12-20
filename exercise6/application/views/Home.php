@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   }
 </script>
 </head>
-<body background = "uploads/img/bg1.jpg">
+<body>
 <header>
   <div class = "wrapper">
     <a id = "logo" href = "<?php echo base_url();?>Main/Main" target = "display"></img>
