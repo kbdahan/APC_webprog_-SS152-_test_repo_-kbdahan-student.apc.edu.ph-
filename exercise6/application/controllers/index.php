@@ -21,7 +21,6 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('index');
-		$data['images'] = $this->home_model->get_images();
-	$this->load->view('index', $data);
+		$this->load->helper('url');
 	}
 }
