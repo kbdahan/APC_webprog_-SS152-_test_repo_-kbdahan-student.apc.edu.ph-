@@ -4,7 +4,7 @@
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="<?php echo link_tag('css/styles.css')?>">
+   <link rel="stylesheet" href= "<?php echo base_url();?>css/styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
    <title>BlackHole Disposal</title>
@@ -14,7 +14,7 @@
   }
 </script>
 </head>
-<body background = "uploads/bg1.jpg">
+<body background = "<?php echo base_url(); ?>uploads/bg1.jpg">
 <header>
   <div class = "wrapper">
     <a id = "logo" href = "Main.html" target = "display"></img>
