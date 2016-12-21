@@ -57,10 +57,10 @@ function MM_swapImage() { //v3.0
    <li class='has-sub'><a href='#'><span>Photo Gallery</span></a>
       <ul>
          <li><a href="<?php echo base_url('PhotoGallery/childhood');?>"><span>Childhood</span></a></li>
-         <li><a href="FamilyGallery.html"><span>Family</span></a></li>
-         <li><a href="elementarygallery.html"><span>Elementary</span></a></li>
-         <li><a href="highschoolGallery.html"><span>HighSchool</span></a></li>
-         <li class='last'><a href="collegegallery.html"><span>College</span></a></li>
+         <li><a href="<?php echo base_url('PhotoGallery/family');?>"><span>Family</span></a></li>
+         <li><a href="<?php echo base_url('PhotoGallery/elementary');?>"><span>Elementary</span></a></li>
+         <li><a href="<?php echo base_url('PhotoGallery/highschool');?>"><span>HighSchool</span></a></li>
+         <li class='last'><a href="<?php echo base_url('PhotoGallery/college');?>"><span>College</span></a></li>
       </ul>
    </li>
    <li class='has-sub'><a href='#'><span>Favorites</span></a>
