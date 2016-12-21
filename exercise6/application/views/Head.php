@@ -12,8 +12,8 @@
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
 </script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/image_slide.js"></script>
+  <script type="text/javascript" src="<?php echo base_url('js/jquery.min.js');?>"></script>
+  <script type="text/javascript" src="<?php echo base_url('js/image_slide.js');?>"></script>
   <script type="text/javascript">
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
