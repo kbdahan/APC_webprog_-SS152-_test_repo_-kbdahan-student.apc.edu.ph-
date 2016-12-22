@@ -1,3 +1,4 @@
+
 <center>
 <body bgcolor = "#222222" border = "1" border-color = "black">
 <font face = "century gothic" size = "4" color = "snow">
@@ -5,7 +6,7 @@
 <div id="music">music: <a href="<?php echo base_url('music/the 1975 - heart out.mp3');?>" class="blue" onclick="play(this.href);return false">ON</a> / <a href="#" class="blue" onclick="stopsong();return false">OFF</a></div><span id="music1"></span>
    </div>
 
-<pre>
+<pre><span>
 
 
 
@@ -49,7 +50,7 @@ Why don't you figure my heart out
 It's just you and I tonight
 Why don't you figure my heart out
 
-
+</pre><span>
 </font>
 
 </body>
