@@ -1,17 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
-<head>
-  <title>Pets</title>
-  <meta name="description" content="free website template" />
-  <meta name="keywords" content="enter your keywords here" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=9" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/image_slide.js"></script>
-</head>
-
 <body>
   <div id="main">
     <div id="header">
@@ -30,9 +16,9 @@
 	  </div><!--close text_content-->		
 	
       <ul class="slideshow">
-        <li class="show"><img width="500" height="485" src="img/pet/1.jpg"  /></li>
-        <li><img width="500" height="450" src="img/pet/2.jpg"  /></li>
-        <li><img width="500" height="450" src="img/pet/3.jpg"  /></li>
+        <li class="show"><img width="500" height="485" src="<?php echo base_url('assets/uploads/img/pet/1.jpg');?>"  /></li>
+        <li><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/pet/2.jpg');?>"  /></li>
+        <li><img width="500" height="450" src="<?php echo base_url('assets/uploads/img/pet/3.jpg');?>"  /></li>
       </ul>     
     
 	</div><!--end site_content-->
