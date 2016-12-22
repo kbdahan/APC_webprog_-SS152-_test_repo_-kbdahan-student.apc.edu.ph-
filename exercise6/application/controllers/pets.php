@@ -3,6 +3,7 @@
 class pets extends CI_Controller {
 	public function index()
 	{
+	$this->load->view('Head');
 	$this->load->view('pets');
 	}
 }
