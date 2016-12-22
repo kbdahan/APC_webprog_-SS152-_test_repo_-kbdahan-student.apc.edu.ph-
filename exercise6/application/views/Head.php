@@ -65,12 +65,12 @@ function MM_swapImage() { //v3.0
    </li>
    <li class='has-sub'><a href='#'><span>Favorites</span></a>
       <ul>
-         <li><a href="pets.html"target = "display"><span>Pets</span></a></li>
+         <li><a href="<?php echo base_url('pets');?>"><span>Pets</span></a></li>
          <li class='has-sub'><a href='#'><span>Song</span></a>
             <ul>
-               <li><a href="rock.html"target = "display"><span>Rock</span></a></li>
-               <li><a href="pop.html"target = "display"><span>Pop</span></a></li>
-               <li class='last'><a href="mellow.html"target = "display"><span>Mellow</span></a></li>
+               <li><a href="<?php echo base_url('rock.html');?>"><span>Rock</span></a></li>
+               <li><a href="<?php echo base_url('pop.html');?>"><span>Pop</span></a></li>
+               <li class='last'><a href="<?php echo base_url('mellow.html');?>"><span>Mellow</span></a></li>
             </ul>
          </li>
       </ul>
