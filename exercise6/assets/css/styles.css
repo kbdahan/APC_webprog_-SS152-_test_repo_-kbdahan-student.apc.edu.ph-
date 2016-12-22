@@ -18,6 +18,20 @@ p
 img
 { border: 2;
 	border-color: Black}
+pre
+{
+  text-align: center;
+  background-color: #181818;
+  width: 700px;
+  height: 1500px;
+}
+pre span
+{ 
+  background-color: ;
+    background-color: #181818;
+  width: 700px;
+  height: 950px;
+}
 
 h1, h2, h4, h5, h6 
 { font: normal 175% Hallo Sans;
