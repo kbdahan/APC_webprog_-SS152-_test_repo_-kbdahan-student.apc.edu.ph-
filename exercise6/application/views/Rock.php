@@ -1,25 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Rock</title>
-
-<script type="text/javascript"><!--
-function play(what){
-document.getElementById('music1').innerHTML="<embed type='application/x-mplayer2' id='music2' pluginspage='http://www.microsoft.com/Windows/MediaPlayer/' src='"+what+"' name='MediaPlayer1' width='0' height='0' controltype='2' showcontrols='1' showstatusbar='1' AutoStart='true' loop='false' ></embed>";
-}
-function stopsong(){
-document.getElementById('music1').innerHTML="";
-}
-//-->
-</script>
-</head>
-
 <center>
-<body bgcolor = "#222222" >
+<body bgcolor = "#222222" border = "1" border-color = "black">
 <font face = "century gothic" size = "4" color = "snow">
 <h1> Heart Out - The 1975</h1>
-<div id="music">music: <a href="music/the 1975 - heart out.mp3" class="blue" onclick="play(this.href);return false">ON</a> / <a href="#" class="blue" onclick="stopsong();return false">OFF</a></div><span id="music1"></span>
+<div id="music">music: <a href="<?php echo base_url('music/the 1975 - heart out.mp3');?>" class="blue" onclick="play(this.href);return false">ON</a> / <a href="#" class="blue" onclick="stopsong();return false">OFF</a></div><span id="music1"></span>
    </div>
 
 <pre>

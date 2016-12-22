@@ -38,6 +38,15 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 </script>
+<script type="text/javascript"><!--
+function play(what){
+document.getElementById('music1').innerHTML="<embed type='application/x-mplayer2' id='music2' pluginspage='http://www.microsoft.com/Windows/MediaPlayer/' src='"+what+"' name='MediaPlayer1' width='0' height='0' controltype='2' showcontrols='1' showstatusbar='1' AutoStart='true' loop='false' ></embed>";
+}
+function stopsong(){
+document.getElementById('music1').innerHTML="";
+}
+//-->
+</script>
 </head>
 <body>
 <header>
@@ -68,9 +77,9 @@ function MM_swapImage() { //v3.0
          <li><a href="<?php echo base_url('pets');?>"><span>Pets</span></a></li>
          <li class='has-sub'><a href='#'><span>Song</span></a>
             <ul>
-               <li><a href="<?php echo base_url('rock.html');?>"><span>Rock</span></a></li>
-               <li><a href="<?php echo base_url('pop.html');?>"><span>Pop</span></a></li>
-               <li class='last'><a href="<?php echo base_url('mellow.html');?>"><span>Mellow</span></a></li>
+               <li><a href="<?php echo base_url('Song/rock');?>"><span>Rock</span></a></li>
+               <li><a href="<?php echo base_url('Song/pop');?>"><span>Pop</span></a></li>
+               <li class='last'><a href="<?php echo base_url('Song/mellow');?>"><span>Mellow</span></a></li>
             </ul>
          </li>
       </ul>
