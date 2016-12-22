@@ -1,5 +1,3 @@
-<script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/image_slide.js"></script>
   <div id="main">
     <div id="header">
       
